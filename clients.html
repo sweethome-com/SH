@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos de Clientes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color:black;
+        }
+        .testimonial-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .swiper-slide {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #2d6a4f;
+            font-size:15px;
+        }
+        nav {
+            background-color: #2d6a4f;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+/*             text-decoration: underline; */
+            color: #3e3506;
+            font-weight: bold;
+        }
+/* Estilos de texto */
+h2 {
+    color: #f4f4f4;
+}
+.text-green-500 {
+    color: #38b2ac; /* Verde */
+}
+
+/* Estilos para o conteúdo dos depoimentos */
+.swiper-slide img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+h4 {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Estilos para o texto dos depoimentos */
+p {
+    color: #444;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Estilos para os ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38b2ac;
+    transform: scale(1.1);
+}
+
+.social-icons i {
+    margin: 0 10px;
+}
+
+/* Ícones do FontAwesome */
+.social-icons .fa-facebook:hover {
+    color: #1877f2; /* Azul do Facebook */
+}
+
+.social-icons .fa-linkedin:hover {
+    color: #0077b5; /* Azul do LinkedIn */
+}
+
+.social-icons .fa-instagram:hover {
+    color: #e1306c; /* Rosa do Instagram */
+}
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="flex justify-center">
+        <a href="index.html" class="heroo">Home</a>
+        <a href="blog-3col.html" class="heroo">Blog</a>
+        <a href="cv.html" class="heroo">Resume</a>
+        <a href="service.html" class="heroo">Service</a>
+    </nav>
+    <section class="py-16 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Nossos <span class="text-green-500">Clientes Satisfeitos</span></h2>
+            <p class="text-lg">Depoimentos de clientes que confiam em nosso trabalho e excelência.</p>
+        </div>
+    </section>
+    
+    <div class="testimonial-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/client/vanessa.png" alt="Vanessa" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">Vanessa</h3>
+                    <h4 class="text-gray-600">Supervisora da Gerdau</h4>
+                    <p class="text-gray-800 mt-4">"O serviço prestado pelo Breno superou nossas expectativas! Profissionalismo, dedicação e qualidade impecável."</p>
+                   <div class="social-icons">
+                       <a href="#" style="color:black"><i class="fa fa-linkedin"></i>
+                       <a href="https://www.instagram.com/vahh.fleury/" style="color:black"><i class="fa fa-instagram"></i>
+                       </a>
+                   </div>
+                </div>
+
+                
+                <div class="swiper-slide">
+                    <img src="img/client/joao1.jpg" alt="João Marques" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">João Marques</h3>
+                    <h4 class="text-gray-600">Empresário</h4>
+                    <p class="text-gray-800 mt-4">"Meu escritório ganhou vida nova! Breno tem um talento incrível para transformar ambientes."</p>
+                    <div class="social-icons">
+                       <a href="https://linkedin/in/" style="color:black"><i class="fa fa-linkedin"></i>
+                       <a href="https://instagram.com/" style="color:black"><i class="fa fa-instagram"></i>
+                       </a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/client/camila1.jpg" alt="João Marques" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">Julia Costa</h3>
+                    <h4 class="text-gray-600">Psicóloga</h4>
+                    <p class="text-gray-800 mt-4">"Grata pelo serviço prestado pelo Breno. Excelente profissional multifacetado!"</p>
+                    <div class="social-icons">
+                       <a href="https://linkedin/in/" style="color:black"><i class="fa fa-linkedin"></i>
+                       <a href="https://instagram.com/" style="color:black"><i class="fa fa-instagram"></i>
+                       </a>
+                   </div>
+                </div>
+                 <div class="swiper-slide">
+                    <img src="img/client/maria1.jpg" alt="João Marques" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold"></h3>
+                    <h4 class="text-gray-600">Jennifer Castro</h4>
+                    <p class="text-gray-800 mt-4">"O serviço de limpeza do Breno no meu terreno e jardim foi impecável. Grata pelo seu excelente desempenho!! "</p>
+                    <div class="social-icons">
+                       <a href="https://linkedin/in/" style="color:black"><i class="fa fa-linkedin"></i>
+                       <a href="https://instagram.com/" style="color:black"><i class="fa fa-instagram"></i>
+                       </a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sTJmLactagtI4Z_OGnGWdwAAAA%26pid%3DApi&f=1&ipt=aee75e457b83047e8e9a104f4eb5a450f1c867756671e17900f868d88bba72c8&ipo=images" alt="Camila Ferreira" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">Vladimir</h3>
+                    <h4 class="text-gray-600">Colaborador - Gerdau</h4>
+                    <p class="text-gray-800 mt-4">"O Breno é extremamente competente e tem uma visão única para deixar os espaços ainda mais bonitos. Poder ver o trabalho dele na Gerdau foi gratificante, parabéns!"</p>
+                     <div class="social-icons">
+                           <a href="#" style="color:black"><i class="fa fa-linkedin"></i>
+                           <a href="#" style="color:black"><i class="fa fa-instagram"></i>
+                           </a>
+                       </div>
+                </div>
+               <div class="swiper-slide">
+                  <img src="https://instagram.fcnf1-1.fna.fbcdn.net/v/t51.2885-19/457207761_492808866685031_4897539485187003914_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fcnf1-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2AHauTfACmYyQ_1tISE8MmplVnMK3r645iPe7TYBqNv2ylA6MOzM16CKQM6FDQH-Y2rhDPTUY6E5XZbLH9IOYtjF&_nc_ohc=o8CWNgPPgwgQ7kNvgE9Qu6L&_nc_gid=OBY27vR7EbpyG1ElalJ-0A&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AYHuinoXPJc1NI2xWj4DF1JdRhRJkyCEUrrig9le_qn9aw&oe=67DDCEDB&_nc_sid=7d3ac5" alt="" class="w-24 h-24 mx-auto rounded-full mb-3">
+                  <h3 class="text-xl font-bold">Gisele Souza</h3>
+                  <h4 class="text-gray-600">Técnica ST & Supervisora</h4>
+                  <p class="text-gray-800 mt-4">"O trabalho do Breno na Gerdau foi excelente. Ele detém de um profissionalismo impecável."</p>
+                   <div class="social-icons">
+                       <a href="#" style="color:black"><i class="fa fa-linkedin"></i>
+                       <a href="https://www.instagram.com/gi.msouza_" style="color:black"><i class="fa fa-instagram"></i>
+                       </a>
+                   </div>
+               </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div> </br></br></br></br></br></br></br></br></br>
+
+<div class="max-w-4xl mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Recommendation Letters</h2>
+    
+    <div class="space-y-6">
+        <!-- Recommendation 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQH5R81hufn4_w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1686221361048?e=2147483647&v=beta&t=0FBJGbIAOhSFYD-N3YU_TaddZPD8nNi736GQWnNDQmg" alt="Recommender's photo" class="w-16 h-16 rounded-full object-cover">
+            <div>
+                <p class="text-gray-700 italic">“Breno Martins has demonstrated exceptional skills and commitment in every project he has been part of. His ability to solve problems and innovate is truly impressive.”</p>
+                <p class="text-gray-900 font-semibold mt-2">— Luiz Katzap, Business Development Manager, Tel Aliv, Israel</p>
+                <div class="mt-2 flex space-x-2">
+                    <a href="https://www.instagram.com/luizkatzap/" target="_blank" class="text-blue-600 hover:underline">Instagram</a>
+                    <a href="https://il.linkedin.com/in/luizkatzap?original_referer=https%3A%2F%2Fduckduckgo.com%2F" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recommendation 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sTJmLactagtI4Z_OGnGWdwAAAA%26pid%3DApi&f=1&ipt=aee75e457b83047e8e9a104f4eb5a450f1c867756671e17900f868d88bba72c8&ipo=images" alt="Recommender's photo" class="w-16 h-16 rounded-full object-cover">
+            <div>
+                <p class="text-gray-700 italic">“To whom it may concern, I hereby recommend Breno Martins.”</p>
+                <p class="text-gray-700 italic">“I had the pleasure of seeing and working with Breno for a period of time and observed his dedication and eagerness to learn, design, create, and develop tools...”</p>
+                <p class="text-gray-900 font-semibold mt-2">— Yehuda Rosenberg, Security Researcher, Tel Aviv, Israel</p>
+                <div class="mt-2 flex space-x-2">
+                    <a href="https://instagram.com/" target="_blank" class="text-blue-600 hover:underline">Instagram</a>
+                    <a href="https://linkedin.com/in/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendation 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sTJmLactagtI4Z_OGnGWdwAAAA%26pid%3DApi&f=1&ipt=aee75e457b83047e8e9a104f4eb5a450f1c867756671e17900f868d88bba72c8&ipo=images" alt="Recommender's photo" class="w-16 h-16 rounded-full object-cover">
+            <div>
+                <p class="text-gray-700 italic">“Recomendo fortemente o profissional Breno Martins por sua atuação em diversas áreas. Sua ampla gama de habilidades e sua competência multifuncional são notáveis, demonstrando um alto nível de excelência e comprometimento em tudo o que faz”</p>
+                <p class="text-gray-900 font-semibold mt-2">— Jonas Cristiano,Customer Suport, Q&A Rio de Janeiro, Brasil</p>
+                <div class="mt-2 flex space-x-2">
+                    <a href="https://instagram.com/" target="_blank" class="text-blue-600 hover:underline">Instagram</a>
+                    <a href="https://linkedin.com/in/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+        <p class="text-lg">&copy; 2025 Sweet Home. Todos os direitos reservados.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/breno-m-708141210?trk=public_post_follow-view-profile&original_referer=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fbreno-m-708141210_espionando-empres%25C3%25A1rios-o-hack-perfeito-activity-7109576741077028865-DLf-" class="text-gray-400 hover:text-white"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="mt-2 text-gray-400 text-sm">Desenvolvido por Breno Martins</p>
+    </div>
+</footer>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
