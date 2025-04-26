@@ -1,0 +1,440 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gardening & Landscaping</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="urosd">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #2a2a2a;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: lightblue;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Seções */
+    .services, .planos, .contact {
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 1200px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: lightblue;
+    }
+
+    .services h2, .planos h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Grid para os serviços */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background-color: #1e0401;
+      border: 1px solid #18bf04;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      background-color: #034743;
+    }
+
+    .service-item img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    .service-item h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #0394e1;
+    }
+
+    /* Planos de Serviço */
+    .plan-item {
+      background-color: #231504;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .plan-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .plan-item h3 {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      color: #1fb7b7;
+    }
+
+    /* Formulário de Contato */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #003366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0077b6;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .li { color: black; } 
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .services, .planos, .contact {
+        padding: 20px;
+      }
+      .li { color: black; } 
+
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      .li { color: black; } 
+
+      }
+
+      .service-item h3, .plan-item h3 {
+        font-size: 1rem;
+        .li { color: black; } 
+
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <header class="header-area">
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="slogan">
+                            <p style="color:lightblue"><b>Transforming your outdoor space into a beautiful paradise!</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 text-right">
+                        <div class="top-header-info">
+                            <a href="mailto:contactsweethome2024@gmail.com"><i class="fa fa-envelope"></i>E-mail us</a>
+                            <a href="https://wa.me/5531990735791"><i class="fa fa-whatsapp"></i>+553199075791</a>
+                            <a href="#"><i class="fa fa-phone"></i>+5531990735791</a>
+                            <a href="#"><i class="fa fa-clock-o"></i> Mon – Fri : 9am - 6pm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="garden-logo">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <nav class="main-menu">
+                            <ul class="navigation">
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="#">service<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <ul class="drop-menu">
+                                        <li><a href="service.html">service</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="price.html" class="menu-active">price</a></li>
+                                <li><a href="cv.html">Resume</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+<div class="planos">
+  <h2>Planos de Jardinagem e Paisagismo</h2>
+  <div class="plan-item">
+    <h3>Plano A</h3>
+    <ul>
+      <li>Planejamento inicial do jardim</li>
+      <li>Seleção de plantas fáceis de cuidar</li>
+      <li>Execução de plantio básico</li>
+      <li>Rega manual ocasional</li>
+    </ul> 
+  </div>
+  <div class="plan-item">
+    <h3>Plano B</h3>
+    <ul>
+      <li>Planejamento personalizado do jardim</li>
+      <li>Seleção de plantas ornamentais e florais</li>
+      <li>Execução completa do plantio</li>
+      <li>Sistema de irrigação automatizado</li>
+      <li>Manutenção mensal incluída</li>
+    </ul>
+  </div>
+  <div class="plan-item">
+    <h3>Plano C</h3>
+    <ul>
+      <li>Planejamento detalhado e exclusivo</li>
+      <li>Seleção de plantas de diferentes texturas e cores</li>
+      <li>Execução completa do projeto paisagístico</li>
+      <li>Instalação de fontes e outros elementos decorativos</li>
+      <li>Sistema de irrigação e drenagem completo</li>
+      <li>Manutenção semestral incluída</li>
+    </ul>
+  </div>
+    <div class="get-in-touch-btn-container">
+        <a href="https://wa.me/+5531998353307" class="get-in-touch-btn" target="_blank">
+        <i class="fa fa-whatsapp"></i> Get in touch with us 
+        </a>
+    </div>
+</div>
+
+<div class="services">
+  <h2>Serviços de Jardinagem e Paisagismo</h2>
+  <div class="service-item">
+    <h3>Limpeza de Quintal ou Terreno</h3>
+    <ul>
+      <li>Remoção de entulho e lixo</li>
+      <li>Limpeza e organização de espaços externos</li>
+      <li>Capinação e remoção de mato</li>
+      <li>Rastelagem e poda de grama</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Manutenção de Jardins</h3>
+    <ul>
+      <li>Rega e irrigação adequadas</li>
+      <li>Podas de plantas ornamentais</li>
+      <li>Adubação e nutrição das plantas</li>
+      <li>Controle de pragas e doenças</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Criação de Jardins</h3>
+    <ul>
+      <li>Planejamento e design de jardins grandes e pequenos</li>
+      <li>Seleção de plantas adequadas para o clima e solo</li>
+      <li>Instalação de sistemas de irrigação eficientes</li>
+      <li>Criação de caminhos, cercas e outros elementos paisagísticos</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Podas de Árvores e Arbustos</h3>
+    <ul>
+      <li>Podas para controle de crescimento</li>
+      <li>Manutenção e poda de árvores frutíferas</li>
+      <li>Poda estética para valorização da paisagem</li>
+      <li>Retirada de galhos secos e danificados</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Limpeza de Gramado e Controle de Pragas</h3>
+    <ul>
+      <li>Rastreamento e remoção de pragas do gramado</li>
+      <li>Restauração do gramado danificado</li>
+      <li>Aplicação de fertilizantes e correção do solo</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Pintura e Manutenção de Elementos Externos</h3>
+    <ul>
+      <li>Pintura de cercas, portões e outros elementos</li>
+      <li>Reparo de pequenos danos nas estruturas externas</li>
+      <li>Manutenção de calçadas e espaços decorativos</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Criação de Paisagens Temáticas</h3>
+    <ul>
+      <li>Jardins de inverno, jardins zen e mais</li>
+      <li>Instalação de fontes e lagos ornamentais</li>
+      <li>Construção de espaços de convivência ao ar livre</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Consultoria para Projetos Paisagísticos</h3>
+    <ul>
+      <li>Consultoria para novos projetos de paisagismo</li>
+      <li>Reforma e modernização de jardins existentes</li>
+      <li>Aconselhamento sobre escolha de plantas e materiais</li>
+    </ul>
+  </div>
+
+      <div class="get-in-touch-btn-container">
+        <a href="https://wa.me/+5531990735791" class="get-in-touch-btn" target="_blank">
+        <i class="fa fa-whatsapp"></i> We're on WhatsApp
+        </a>
+    </div>
+</div>
+
+  
+
+    <footer class="footer-area">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h2>About us</h2>
+                            <p>Transforming outdoor spaces with quality, creativity, and sustainability. Your dream garden, our passion...</p>
+                            <a href="about.html" class="garden-btn move-eff"><span>read more</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="cv.html">Resume</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h2>Our Services</h2>
+                            <ul>
+                                <li><a href="gardendesign.html">Garden Design</a></li>
+                                <li><a href="lawnclean.html">Lawn Care</a></li>
+                                <li><a href="landscaping.html">Landscaping</a></li>
+                                <li><a href="control.html">Pest Control</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h2>Contact Info</h2>
+                            <p><i class="fa fa-map-marker"></i>Alvinópolis, MG - Brasil</p>
+                            <p><i class="fa fa-phone"></i> +5531990735791</p>
+                            <p href="mailto:contactsweethome2024@gmail.com"><i class="fa fa-envelope"></i> E-mail us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======= All js ======= -->
+    <!-- modernizr js -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- jQuery min js -->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- sticky js -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- ajaxchimp js -->
+    <script src="js/ajaxchimp.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jarallax js -->
+    <script src="js/jarallax.min.js"></script>
+    <!-- jarallax js -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- counterup js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- waypoints js -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- waypoints js -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- slicknav js -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
